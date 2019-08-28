@@ -1,0 +1,90 @@
+{
+  "name": "alice.extas.example",
+  "plugins": [
+
+    {
+      "class": "extas\\components\\plugins\\steps\\PluginStepDemoTest",
+      "stage": "test.demo.step.demo.test"
+    },
+    {
+      "class": "extas\\components\\plugins\\steps\\PluginStepDemoHelp",
+      "stage": "test.demo.step.demo.help"
+    },
+    {
+      "class": "extas\\components\\plugins\\steps\\PluginStepDemoStart",
+      "stage": "test.demo.step.demo.start"
+    }
+  ],
+  "skills": [
+    {
+      "name": "test",
+      "description": "Test skill",
+      "id": "3ad36498-f5rd-4079-a14b-788652932056"
+    }
+  ],
+  "buttons": [
+    {
+      "name": "blg",
+      "title": "Base library Github",
+      "url": "https://github.com/jeyroik/alice-extas",
+      "hide": true,
+      "payload": []
+    }
+  ],
+  "cards": [
+    {
+      "name": "test.image.single",
+      "type": "BigImage",
+      "title": "Test image",
+      "description": "This is a test image",
+      "button": "blg"
+    },
+    {
+      "name": "test.image.list",
+      "type": "ItemsList",
+      "items": [
+        "test.image.single",
+        "test.image.single",
+        "test.image.single"
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "name": "demo.help",
+      "title": "Помощь",
+      "description": "Пользователь запросил помощь"
+    },
+    {
+      "name": "demo.start",
+      "title": "Начало использования",
+      "description": "На этом шаге приветствуем пользователя"
+    },
+    {
+      "name": "demo.test",
+      "title": "Тест",
+      "description": "Запрос для тестирования сценария"
+    }
+  ],
+  "scenarios": [
+    {
+      "name": "demo",
+      "title": "Демонстрационный сценарий",
+      "description": "Это демонстрационный сценарий",
+      "skill_name": "test",
+      "schema": {
+        "message_1": [{
+          "condition": "",
+          "step": "demo.start"
+        }],
+        "message_x": [{
+          "condition": "",
+          "step": "demo.help"
+        }, {
+          "condition": "extas\\components\\conditions\\ConditionTest",
+          "step": "demo.test"
+        }]
+      }
+    }
+  ]
+}

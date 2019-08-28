@@ -1,0 +1,12 @@
+{
+  "name": "jeyroik/alice-extas-example",
+  "description": "Usage jeyroik/alice-extas library example",
+  "require": {
+    "jeyroik/alice-extas": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "extas\\": "src/"
+    }
+  }
+}
