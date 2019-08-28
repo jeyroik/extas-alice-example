@@ -4,28 +4,21 @@
 
 # Установка
 
-`composer require jeyroik/alice-extas-example:*`
+```
+/# cd /var/www
+/var/www# git clone https://github.com/jeyroik/alice-extas-example.git
+/var/www# cd alice-extas-example
+/var/www/alice-extas-example# composer i
+/var/www/alice-extas-example# cp resources/env.dist .env
+/var/www/alice-extas-example# /vendor/bin/extas i
+/var/www/alice-extas-example# php -S 0.0.0.0:8080 -t public
+```
 
 # Требования
 
 - MongoDb 2.6+
 
 # Использование
-
-## Тестовый запуск
-
-### Устанавливаем всё необходимое
-
-```
-/alice-extas-example# composer i
-/alice-extas-example# cp resources/env.dist .env
-/alice-extas-example# /vendor/bin/extas i -p extas.json
-/alice-extas-example# php -S 0.0.0.0:8080 -t public
-```
-
-Это установит тестовый сценарий и тестовые шаги для него.
-
-### Делаем запрос
 
 Любым любимым инструментом шлём запрос на наш навык:
 
