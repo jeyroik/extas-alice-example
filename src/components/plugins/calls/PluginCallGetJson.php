@@ -17,7 +17,7 @@ class PluginCallGetJson extends Plugin
     public function __invoke(&$yandexCall)
     {
         if (isset($_REQUEST['json'])) {
-            $get = json_decode($_REQUEST['json'], true);
+            $get = json_decode(base64_decode($_REQUEST['json']), true);
             $get && $yandexCall = $get;
         }
     }
