@@ -13,6 +13,10 @@
     {
       "class": "extas\\components\\plugins\\steps\\PluginStepDemoStart",
       "stage": "test.demo.step.demo.start"
+    },
+    {
+      "class": "extas\\components\\plugins\\calls\\PluginCallGetJson",
+      "stage": "alice.call.get"
     }
   ],
   "skills": [
