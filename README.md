@@ -1,22 +1,22 @@
-# alice-extas-example
+# Extas-alice-example
 
-Пример использования библиотеки [alice-extas](https://github.com/jeyroik/alice-extas "Перейти к библиотеке alice-extas") для реализации навыков для Яндекс.Алисы.
+Пример использования библиотеки [extas-alice](https://github.com/jeyroik/extas-alice "Перейти к библиотеке extas-alice") для реализации навыков для Яндекс.Алисы.
 
 # Установка
 
 ```
-/# cd /var/www
-/var/www# git clone https://github.com/jeyroik/alice-extas-example.git
-/var/www# cd alice-extas-example
-/var/www/alice-extas-example# composer i
-/var/www/alice-extas-example# cp resources/env.dist .env
-/var/www/alice-extas-example# /vendor/bin/extas i
-/var/www/alice-extas-example# php -S 0.0.0.0:8080 -t public
+/# cd ~
+~# git clone https://github.com/jeyroik/extas-alice-example.git
+~# cd extas-alice-example
+~/extas-alice-example# composer i
+~/extas-alice-example# cp resources/env.dist .env
+~/extas-alice-example# vendor/bin/extas i
+~/extas-alice-example# php -S 0.0.0.0:8080 -t public
 ```
 
 # Требования
 
-- MongoDb 2.6+
+- MongoDb 3.0+
 
 # Использование
 
